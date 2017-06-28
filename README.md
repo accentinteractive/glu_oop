@@ -1,8 +1,8 @@
 # Shopping Cart Assignment
 
 [![Education](https://img.shields.io/badge/category-education-blue.svg)]()
-[![Crates.io](https://img.shields.io/crates/l/rustc-serialize.svg)]()
-[![Beerpay](https://img.shields.io/beerpay/hashdog/scrapfy-chrome-extension.svg)]()
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)]()
+[![Beerpay](https://img.shields.io/badge/Beerpay-%E2%82%AC0-red.svg)]()
 
 ## Opdracht
 Je maakt een simpele shopping cart voor een webshop. Die bestaat uit het volgende:
