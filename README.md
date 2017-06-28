@@ -1,23 +1,44 @@
 # Shopping Cart Assignment
 
-You must create two classes: Product and Order.
+[![Education](https://img.shields.io/badge/category-education-blue.svg)]()
+[![Crates.io](https://img.shields.io/crates/l/rustc-serialize.svg)]()
+[![Beerpay](https://img.shields.io/beerpay/hashdog/scrapfy-chrome-extension.svg)]()
 
-* A product will hold a product that can be purchased in this webshop.
-* An order will hold one or more products ordered in this webshop.
+## Opdracht
+Je maakt een simpele shopping cart voor een webshop. Die bestaat uit het volgende:
 
-public/index.php is the webroot. In this file, do the following:
-* Create some products:
+* Een product class bevat een product dat kan worden gekocht in de webshop.
+* Een order class bevat één of meer producten die worden gekocht in de webshop.
+
+public/index.php is de webroot. In dit bestand doe je het volgende:
+* Maak een paar producten:
     * id: 123_pants; name: Jeans; price: 75.50
     * id: 245_tshirt_blue; name: T-shirt blue; price: 12.50
     * id: 245_tshirt_red; name: T-shirt red; price: 12.50
 
-* Add products to order:
+* Stop de volgende producten in je order:
     * 245_tshirt_blue * 2
     * 245_tshirt_red * 1
     * 123_pants * 2
 
-* Delete a product from the order by id, 
-* Get the subtotal for a product in the order. 
-* Get the total for the entire order. 
+* Verwijderen een product uit je order, op id. 
+* Bereken het subtotaal van je order met een functie op de class Order. 
+* Bereken het totaal van je order met een functie op de class Order. 
 
-Good luck!
+Succes!
+
+#Tip
+Bestand index.php bevat al een autoloader voor classes. Deze laadt automatisch classes die in `app` staan, als de filename hetzelfde is als de classname.
+ 
+Je kunt class Order dus gewoon gebruiken in index.php op de volgende manier:
+```
+$webshopOrder = new Order();
+```
+
+#Structuur project
+
+```
+-- app: hier komen alle classes
+-- public: de webroot
+- bootstrap.php: autolader voor classes
+```
